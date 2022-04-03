@@ -1,0 +1,7 @@
+{% extends "Layouts/index.html" %}
+{% block main %}
+<h1>{{ category.name|escape }}</h1>
+<p>ID ove kategorije je: {{ category.category_id }}</p>
+
+<a href="/PHP/index.php">Vrati se nazad</a>
+{% endblock %}

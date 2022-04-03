@@ -1,0 +1,14 @@
+{% extends "Layouts/index.html" %}
+{% block main %}
+<nav>
+    <ul>
+        {% for category in categories %}
+            <li>
+                <a href="/PHP/category/{{ category.category_id }}">
+                    {{ category.name|escape}}
+                </a>    
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
+{% endblock %}
